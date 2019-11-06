@@ -52,6 +52,7 @@ return [
             'path' => storage_path('logs/laravel.log'),
             'level' => 'debug',
             'days' => 14,
+            'permission' => 0666 //可以通过 permission 字段来调整权限，亦可以通过用户组来调整。
         ],
 
         'slack' => [
